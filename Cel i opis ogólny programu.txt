@@ -1,0 +1,171 @@
+Cel i opis ogólny programu
+Program to System Zarządzania Wypożyczalnią Sprzętu. Umożliwia on klientom przeglądanie i wypożyczanie sprzętu, a pracownikom zarządzanie bazą asortymentu, obsługę zwrotów, ocenę stanu technicznego oraz kontrolę płatności. System automatyzuje naliczanie kosztów, w tym ewentualnych kar za opóźnienia lub uszkodzenia
+
+
+Opis klas, atrybutów i metod
+
+1. Uzytkownik (Klasa abstrakcyjna)
+	Klasa bazowa reprezentująca każdą osobę korzystającą z systemu.
+
+Atrybuty:
+
+	Imie, Nazwisko, Telefon – podstawowe dane kontaktowe użytkownika.
+
+Metody:
+
+	PodajDane() – pozwala na wprowadzenie lub aktualizację danych użytkownika.
+
+	WybierzRole() – przypisuje użytkownikowi odpowiednią rolę w systemie (Klient lub Pracownik).
+
+2. Klient (Dziedziczy po Uzytkownik)
+	Reprezentuje osobę wypożyczającą sprzęt.
+
+Metody:
+
+	PrzegladajSprzet() – zwraca listę dostępnego sprzętu.
+
+	WybierzSprzet() – pozwala dodać konkretny sprzęt do planowanego wypożyczenia.
+
+	PotwierdzWypozyczenie() – zatwierdza chęć wypożyczenia wybranych pozycji.
+
+	ZglosZwrot() – inicjuje proces oddawania sprzętu do wypożyczalni.
+
+3. Pracownik (Dziedziczy po Uzytkownik)
+	Reprezentuje obsługę wypożyczalni, posiadającą uprawnienia do zarządzania systemem.
+
+Atrybuty:
+
+	HasloPracownika – służy do autoryzacji w systemie.
+
+Metody:
+
+	ZalogujJakoPracownik() – weryfikuje hasło i loguje do systemu.
+
+	DodajSprzet() EdytujSprzet() UsunSprzet() – zarządzanie katalogiem sprzętu.
+
+	ZatwierdzWypozyczenie() – akceptuje wniosek klienta o wypożyczenie.
+
+	PrzyjmijZwrot() – obsługuje proces oddania sprzętu przez klienta.
+
+	OcenStanSprzetu() – weryfikuje, czy zwrócony sprzęt nie jest uszkodzony.
+
+4. Wypozyczenie
+	Centralna klasa agregująca dane o pojedynczej transakcji wypożyczenia.
+
+Atrybuty:
+
+	DataOd – data rozpoczęcia.
+
+	PlanowanaDataZwrotu – zadeklarowany termin zwrotu.
+
+	RzeczywistaDataZwrotu – faktyczny moment oddania sprzętu.
+
+	Status – obecny stan (np. aktywne, zakończone, opóźnione).
+
+	KosztCalkowity – łączna kwota do zapłaty.
+
+Metody:
+
+	Rozpocznij(), Zakoncz() – zmieniają stan procesu wypożyczenia.
+
+	ObliczCzasRzeczywisty() – zwraca faktyczny czas trwania wypożyczenia.
+
+	ObliczKoszt() – kalkuluje całkowity koszt na podstawie czasu i cennika.
+
+	SprawdzOpoznienie() – weryfikuje, czy przekroczono planowaną datę zwrotu.
+
+5. PozycjaWypozyczenia
+	Reprezentuje konkretny rodzaj sprzętu w ramach jednego wypożyczenia 
+
+Atrybuty:
+
+	Ilosc – liczba sztuk danego sprzętu.
+
+	CenaZaDobe – utrwalona cena jednostkowa w momencie wypożyczenia.
+
+Metody:
+
+	ObliczKosztPozycji() – mnoży ilość, cenę za dobę i liczbę dni.
+
+6. Zwrot
+	Odpowiada za finalizację wypożyczenia i ocenę oddawanego sprzętu.
+
+Atrybuty:
+
+	DataZwrotu – moment fizycznego zwrotu.
+
+	StanPoZwrocie – opis stanu (np. sprawny, brudny, zepsuty).
+
+	Uwagi – dodatkowe notatki pracownika.
+
+	DodatkowaOplata – kwota naliczona za ewentualne problemy.
+
+Metody:
+
+	PrzyjmijZwrot() – rejestruje fakt oddania sprzętu.
+
+	NaliczKare() – dodaje opłatę w przypadku uszkodzeń lub opóźnienia.
+
+	ZapiszUwagi() – pozwala dodać adnotacje do protokołu zwrotu.
+
+7. Sprzet
+	pokazuje fizyczny asortyment wypożyczalni.
+
+Atrybuty:
+
+	Nazwa, Typ, Rozmiar, Marka – szczegółowe dane identyfikujące.
+
+	StanTechniczny – aktualna kondycja sprzętu.
+
+	Dostepny – flaga określająca, czy sprzęt jest i można go wypożyczyć.
+
+Metody:
+
+	SprawdzDostepnosc() – zwraca informację, czy sprzęt jest wolny.
+
+	OznaczJakoWypozyczony(), OznaczJakoDostepny() – zmieniają status dostępności.
+
+	ZmienStanTechniczny() – aktualizuje informacje o kondycji sprzętu.
+
+8. KategoriaSprzetu
+	Służy do logicznego grupowania asortymentu (np. Narty, Rowery, Elektronarzędzia).
+
+Atrybuty:
+
+	Nazwa – nazwa kategorii.
+
+	Opis – szczegóły dotyczące grupy asortymentowej.
+
+9. Cennik
+	Definiuje reguły kosztowe dla przypisanego do niego sprzętu.
+
+Atrybuty:
+
+	CenaZaDobe – podstawowa opłata za jeden dzień.
+
+	KaraZaOpoznienie – stawka za każdy dzień zwłoki.
+
+	KaraZaUszkodzenie – stała kwota lub mnożnik potrącany za awarie.
+
+Metody:
+
+	PobierzCene() – zwraca stawkę bazową.
+
+	ObliczKaraZaOpoznienie(), ObliczKaraZaUszkodzenie() – wyliczają konkretne kwoty kar dla danego przypadku.
+
+10. Platnosc
+	Odpowiada za rozliczenie transakcji z klientem, generowana przez klasę Wypozyczenie.
+
+Atrybuty:
+
+	Kwota – wartość do zapłaty.
+
+	MetodaPlatnosci – sposób uregulowania rachunku (np. karta, gotówka).
+
+	Status – stan płatności (np. oczekująca, zrealizowana).
+
+Metody:
+
+	Zatwierdz() – procesuje i oznacza płatność jako opłaconą.
+
+	Anuluj() – przerywa proces płatności.
