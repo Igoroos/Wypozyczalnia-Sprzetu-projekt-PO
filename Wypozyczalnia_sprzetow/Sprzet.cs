@@ -10,19 +10,23 @@ namespace WypozyczalniaSprzetu
         public string Marka { get; set; }
         public string StanTechniczny { get; set; }
         public bool Dostepny { get; set; }
+        public decimal CenaBazowa { get; set; }
 
         public bool SprawdzDostepnosc()
         {
             return Dostepny;
         }
+
         public void OznaczJakoWypozyczony()
         {
             Dostepny = false;
         }
+
         public void OznaczJakoDostepny()
         {
             Dostepny = true;
         }
+
         public void ZmienStanTechniczny(string nowyStan)
         {
             StanTechniczny = nowyStan;
