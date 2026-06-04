@@ -1,5 +1,3 @@
-using System;
-
 namespace WypozyczalniaSprzetu
 {
     public class PozycjaWypozyczenia

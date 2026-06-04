@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Igor Rostkowski\\Desktop\\projekty\\PO\\Wypozyczalnia-Sprzetu-projekt-PO\\Wypozyczalnia_sprzetow\\Wypozyczalnia_sprzetow.csproj": {}
+    "C:\\Users\\Igor Rostkowski\\Desktop\\projekty\\PO\\Wypozyczalnia-Sprzetu-projekt-PO\\wypozyczalnia_sprzetow\\Wypozyczalnia_sprzetow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Igor Rostkowski\\Desktop\\projekty\\PO\\Wypozyczalnia-Sprzetu-projekt-PO\\Wypozyczalnia_sprzetow\\Wypozyczalnia_sprzetow.csproj": {
+    "C:\\Users\\Igor Rostkowski\\Desktop\\projekty\\PO\\Wypozyczalnia-Sprzetu-projekt-PO\\wypozyczalnia_sprzetow\\Wypozyczalnia_sprzetow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Igor Rostkowski\\Desktop\\projekty\\PO\\Wypozyczalnia-Sprzetu-projekt-PO\\Wypozyczalnia_sprzetow\\Wypozyczalnia_sprzetow.csproj",
+        "projectUniqueName": "C:\\Users\\Igor Rostkowski\\Desktop\\projekty\\PO\\Wypozyczalnia-Sprzetu-projekt-PO\\wypozyczalnia_sprzetow\\Wypozyczalnia_sprzetow.csproj",
         "projectName": "Wypozyczalnia_sprzetow",
-        "projectPath": "C:\\Users\\Igor Rostkowski\\Desktop\\projekty\\PO\\Wypozyczalnia-Sprzetu-projekt-PO\\Wypozyczalnia_sprzetow\\Wypozyczalnia_sprzetow.csproj",
+        "projectPath": "C:\\Users\\Igor Rostkowski\\Desktop\\projekty\\PO\\Wypozyczalnia-Sprzetu-projekt-PO\\wypozyczalnia_sprzetow\\Wypozyczalnia_sprzetow.csproj",
         "packagesPath": "C:\\Users\\Igor Rostkowski\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Igor Rostkowski\\Desktop\\projekty\\PO\\Wypozyczalnia-Sprzetu-projekt-PO\\Wypozyczalnia_sprzetow\\obj\\",
+        "outputPath": "C:\\Users\\Igor Rostkowski\\Desktop\\projekty\\PO\\Wypozyczalnia-Sprzetu-projekt-PO\\wypozyczalnia_sprzetow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Igor Rostkowski\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -2,13 +2,23 @@
 
 namespace WypozyczalniaSprzetu
 {
+    public enum StanSprzetu
+    {
+        Idealny,
+        Dobry,
+        Uszkodzony,
+        WymagaNaprawy
+    }
+
     public class Sprzet
     {
         public string Nazwa { get; set; }
         public string Typ { get; set; }
         public string Rozmiar { get; set; }
         public string Marka { get; set; }
-        public string StanTechniczny { get; set; }
+        
+        public StanSprzetu StanTechniczny { get; set; } 
+        
         public bool Dostepny { get; set; }
         public decimal CenaBazowa { get; set; }
 
@@ -27,7 +37,7 @@ namespace WypozyczalniaSprzetu
             Dostepny = true;
         }
 
-        public void ZmienStanTechniczny(string nowyStan)
+        public void ZmienStanTechniczny(StanSprzetu nowyStan)
         {
             StanTechniczny = nowyStan;
         }

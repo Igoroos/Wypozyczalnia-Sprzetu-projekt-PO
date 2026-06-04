@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-
 namespace WypozyczalniaSprzetu
 {
     public class KategoriaSprzetu
