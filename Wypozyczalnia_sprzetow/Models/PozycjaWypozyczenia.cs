@@ -1,10 +1,15 @@
+using System.Text.Json.Serialization;
+
 namespace WypozyczalniaSprzetuGorskiego.Models
 {
     public class PozycjaWypozyczenia
     {
         public int Id { get; set; }
         public int SprzetId { get; set; }
+
+        [JsonIgnore]
         public Sprzet? Sprzet { get; set; }
+
         public int Ilosc { get; set; } = 1;
 
         public PozycjaWypozyczenia()
@@ -15,7 +20,7 @@ namespace WypozyczalniaSprzetuGorskiego.Models
         {
             if (sprzet == null)
             {
-                throw new ArgumentNullException(nameof(sprzet), "Pozycja musi mieć przypisany sprzęt.");
+                throw new ArgumentNullException(nameof(sprzet));
             }
 
             if (ilosc <= 0)
@@ -33,7 +38,7 @@ namespace WypozyczalniaSprzetuGorskiego.Models
         {
             if (Sprzet == null)
             {
-                throw new InvalidOperationException("Nie można obliczyć kosztu pozycji bez przypisanego sprzętu.");
+                throw new InvalidOperationException("Nie można obliczyć kosztu bez przypisanego sprzętu.");
             }
 
             if (liczbaDni <= 0)
@@ -46,8 +51,8 @@ namespace WypozyczalniaSprzetuGorskiego.Models
 
         public override string ToString()
         {
-            string nazwaSprzetu = Sprzet != null ? Sprzet.Nazwa : $"Sprzęt ID: {SprzetId}";
-            return $"{nazwaSprzetu}, ilość: {Ilosc}";
+            string nazwa = Sprzet != null ? Sprzet.Nazwa : $"Sprzęt ID: {SprzetId}";
+            return $"{nazwa}, ilość: {Ilosc}";
         }
     }
 }

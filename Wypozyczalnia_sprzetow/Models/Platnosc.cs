@@ -1,4 +1,4 @@
-﻿namespace WypozyczalniaSprzetuGorskiego.Models
+namespace WypozyczalniaSprzetuGorskiego.Models
 {
     public enum MetodaPlatnosci
     {
@@ -59,7 +59,7 @@
         {
             if (Status == StatusPlatnosci.Zatwierdzona)
             {
-                throw new InvalidOperationException("Nie można anulować już zatwierdzonej płatności.");
+                throw new InvalidOperationException("Nie można anulować zatwierdzonej płatności.");
             }
 
             Status = StatusPlatnosci.Anulowana;
@@ -67,7 +67,7 @@
 
         public override string ToString()
         {
-            return $"Płatność {Id}, wypożyczenie: {WypozyczenieId}, kwota: {Kwota:C}, metoda: {MetodaPlatnosci}, status: {Status}";
+            return $"Płatność {Id}, wypożyczenie: {WypozyczenieId}, kwota: {Kwota} zł, metoda: {MetodaPlatnosci}, status: {Status}";
         }
     }
 }

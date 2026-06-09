@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace WypozyczalniaSprzetuGorskiego.Models
 {
     public class KategoriaSprzetu
@@ -5,6 +7,8 @@ namespace WypozyczalniaSprzetuGorskiego.Models
         public int Id { get; set; }
         public string Nazwa { get; set; } = string.Empty;
         public string Opis { get; set; } = string.Empty;
+
+        [JsonIgnore]
         public List<Sprzet> Sprzety { get; set; } = new List<Sprzet>();
 
         public KategoriaSprzetu()
@@ -22,14 +26,14 @@ namespace WypozyczalniaSprzetuGorskiego.Models
         {
             if (sprzet == null)
             {
-                throw new ArgumentNullException(nameof(sprzet), "Nie można dodać pustego sprzętu.");
+                throw new ArgumentNullException(nameof(sprzet));
             }
 
-            if (!Sprzety.Contains(sprzet))
+            if (!Sprzety.Any(s => s.Id == sprzet.Id))
             {
                 Sprzety.Add(sprzet);
-                sprzet.Kategoria = this;
                 sprzet.KategoriaId = Id;
+                sprzet.Kategoria = this;
             }
         }
 
@@ -43,8 +47,8 @@ namespace WypozyczalniaSprzetuGorskiego.Models
             }
 
             Sprzety.Remove(sprzet);
-            sprzet.Kategoria = null;
             sprzet.KategoriaId = 0;
+            sprzet.Kategoria = null;
             return true;
         }
 

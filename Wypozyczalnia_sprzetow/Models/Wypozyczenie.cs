@@ -1,4 +1,6 @@
-﻿namespace WypozyczalniaSprzetuGorskiego.Models
+using System.Text.Json.Serialization;
+
+namespace WypozyczalniaSprzetuGorskiego.Models
 {
     public enum StatusWypozyczenia
     {
@@ -11,28 +13,45 @@
     public class Wypozyczenie
     {
         public int Id { get; set; }
-        public int IdKlienta { get; set; }
+        public int KlientId { get; set; }
+        public int PracownikId { get; set; }
         public DateTime DataOd { get; set; }
         public DateTime PlanowanaDataZwrotu { get; set; }
         public DateTime? RzeczywistaDataZwrotu { get; set; }
         public StatusWypozyczenia Status { get; set; } = StatusWypozyczenia.Nowe;
         public decimal KosztCalkowity { get; set; }
         public List<PozycjaWypozyczenia> Pozycje { get; set; } = new List<PozycjaWypozyczenia>();
+
+        [JsonIgnore]
+        public Klient? Klient { get; set; }
+
+        [JsonIgnore]
+        public Pracownik? Pracownik { get; set; }
+
+        [JsonIgnore]
         public Platnosc? Platnosc { get; set; }
 
         public Wypozyczenie()
         {
         }
 
-        public Wypozyczenie(int id, int idKlienta)
+        public Wypozyczenie(int id, Klient klient, Pracownik pracownik)
         {
-            if (idKlienta <= 0)
+            if (klient == null)
             {
-                throw new ArgumentException("Id klienta musi być większe od zera.");
+                throw new ArgumentNullException(nameof(klient));
+            }
+
+            if (pracownik == null)
+            {
+                throw new ArgumentNullException(nameof(pracownik));
             }
 
             Id = id;
-            IdKlienta = idKlienta;
+            Klient = klient;
+            KlientId = klient.Id;
+            Pracownik = pracownik;
+            PracownikId = pracownik.Id;
             Status = StatusWypozyczenia.Nowe;
         }
 
@@ -45,12 +64,12 @@
 
             if (pozycja == null)
             {
-                throw new ArgumentNullException(nameof(pozycja), "Nie można dodać pustej pozycji.");
+                throw new ArgumentNullException(nameof(pozycja));
             }
 
             if (pozycja.Sprzet == null)
             {
-                throw new InvalidOperationException("Pozycja wypożyczenia musi mieć przypisany sprzęt.");
+                throw new InvalidOperationException("Pozycja musi mieć przypisany sprzęt.");
             }
 
             if (!pozycja.Sprzet.SprawdzDostepnosc())
@@ -80,14 +99,9 @@
 
             foreach (PozycjaWypozyczenia pozycja in Pozycje)
             {
-                if (pozycja.Sprzet == null)
+                if (pozycja.Sprzet == null || !pozycja.Sprzet.SprawdzDostepnosc())
                 {
-                    throw new InvalidOperationException("Jedna z pozycji nie ma przypisanego sprzętu.");
-                }
-
-                if (!pozycja.Sprzet.SprawdzDostepnosc())
-                {
-                    throw new InvalidOperationException($"Sprzęt '{pozycja.Sprzet.Nazwa}' nie jest dostępny.");
+                    throw new InvalidOperationException("Jeden ze sprzętów nie jest dostępny.");
                 }
             }
 
@@ -183,7 +197,9 @@
 
         public override string ToString()
         {
-            return $"Wypożyczenie {Id}, klient: {IdKlienta}, status: {Status}, koszt: {KosztCalkowity:C}";
+            string klient = Klient != null ? $"{Klient.Imie} {Klient.Nazwisko}" : $"ID {KlientId}";
+            string pracownik = Pracownik != null ? $"{Pracownik.Imie} {Pracownik.Nazwisko}" : $"ID {PracownikId}";
+            return $"Wypożyczenie {Id}, klient: {klient}, pracownik: {pracownik}, status: {Status}, koszt: {KosztCalkowity} zł";
         }
     }
 }

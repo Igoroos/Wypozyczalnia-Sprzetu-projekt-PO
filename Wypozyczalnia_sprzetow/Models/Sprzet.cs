@@ -1,4 +1,6 @@
-﻿namespace WypozyczalniaSprzetuGorskiego.Models
+using System.Text.Json.Serialization;
+
+namespace WypozyczalniaSprzetuGorskiego.Models
 {
     public enum TypSprzetu
     {
@@ -32,6 +34,8 @@
         public bool Dostepny { get; set; } = true;
         public StanTechniczny StanTechniczny { get; set; } = StanTechniczny.Dobry;
         public int KategoriaId { get; set; }
+
+        [JsonIgnore]
         public KategoriaSprzetu? Kategoria { get; set; }
 
         public Sprzet()
@@ -94,7 +98,7 @@
         public override string ToString()
         {
             string dostepnosc = Dostepny ? "dostępny" : "niedostępny";
-            return $"{Id}. {Nazwa}, {Typ}, {Marka}, rozmiar: {Rozmiar}, {CenaZaDobe:C}/doba, {StanTechniczny}, {dostepnosc}";
+            return $"{Id}. {Nazwa}, {Typ}, {Marka}, rozmiar: {Rozmiar}, cena: {CenaZaDobe} zł/doba, stan: {StanTechniczny}, {dostepnosc}";
         }
     }
 }
