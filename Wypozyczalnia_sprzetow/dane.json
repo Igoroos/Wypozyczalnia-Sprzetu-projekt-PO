@@ -1,0 +1,858 @@
+{
+  "Kategorie": [
+    {
+      "Id": 1,
+      "Nazwa": "Narty",
+      "Opis": "Sprz\u0119t narciarski do jazdy po przygotowanych stokach.",
+      "Sprzety": [
+        {
+          "Id": 1,
+          "Nazwa": "Narty Atomic Redster",
+          "Typ": "Narty",
+          "CenaZaDobe": 60,
+          "Rozmiar": "170 cm",
+          "Marka": "Atomic",
+          "Dostepny": true,
+          "StanTechniczny": "BardzoDobry",
+          "KategoriaId": 1,
+          "Kategoria": null
+        },
+        {
+          "Id": 2,
+          "Nazwa": "Narty Fischer RC4",
+          "Typ": "Narty",
+          "CenaZaDobe": 55,
+          "Rozmiar": "165 cm",
+          "Marka": "Fischer",
+          "Dostepny": true,
+          "StanTechniczny": "Dobry",
+          "KategoriaId": 1,
+          "Kategoria": null
+        },
+        {
+          "Id": 10,
+          "Nazwa": "Buty narciarskie Salomon",
+          "Typ": "ButyNarciarskie",
+          "CenaZaDobe": 45,
+          "Rozmiar": "42",
+          "Marka": "Salomon",
+          "Dostepny": true,
+          "StanTechniczny": "Dobry",
+          "KategoriaId": 1,
+          "Kategoria": null
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Nazwa": "Snowboard",
+      "Opis": "Deski snowboardowe i sprz\u0119t do jazdy freestyle.",
+      "Sprzety": [
+        {
+          "Id": 3,
+          "Nazwa": "Snowboard Burton Custom",
+          "Typ": "Snowboard",
+          "CenaZaDobe": 70,
+          "Rozmiar": "158 cm",
+          "Marka": "Burton",
+          "Dostepny": false,
+          "StanTechniczny": "BardzoDobry",
+          "KategoriaId": 2,
+          "Kategoria": null
+        },
+        {
+          "Id": 4,
+          "Nazwa": "Snowboard Head True",
+          "Typ": "Snowboard",
+          "CenaZaDobe": 50,
+          "Rozmiar": "155 cm",
+          "Marka": "Head",
+          "Dostepny": true,
+          "StanTechniczny": "Dobry",
+          "KategoriaId": 2,
+          "Kategoria": null
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "Nazwa": "Akcesoria ochronne",
+      "Opis": "Kaski, kijki i podstawowe akcesoria bezpiecze\u0144stwa.",
+      "Sprzety": [
+        {
+          "Id": 5,
+          "Nazwa": "Kask Uvex",
+          "Typ": "Kask",
+          "CenaZaDobe": 20,
+          "Rozmiar": "M",
+          "Marka": "Uvex",
+          "Dostepny": true,
+          "StanTechniczny": "BardzoDobry",
+          "KategoriaId": 3,
+          "Kategoria": null
+        },
+        {
+          "Id": 6,
+          "Nazwa": "Kijki Leki",
+          "Typ": "Kijki",
+          "CenaZaDobe": 15,
+          "Rozmiar": "120 cm",
+          "Marka": "Leki",
+          "Dostepny": true,
+          "StanTechniczny": "Dobry",
+          "KategoriaId": 3,
+          "Kategoria": null
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Nazwa": "Turystyka g\u00F3rska",
+      "Opis": "Sprz\u0119t do pieszych wycieczek g\u00F3rskich.",
+      "Sprzety": [
+        {
+          "Id": 7,
+          "Nazwa": "Raki Climbing Technology",
+          "Typ": "Raki",
+          "CenaZaDobe": 35,
+          "Rozmiar": "uniwersalny",
+          "Marka": "Climbing Technology",
+          "Dostepny": true,
+          "StanTechniczny": "Dobry",
+          "KategoriaId": 4,
+          "Kategoria": null
+        },
+        {
+          "Id": 8,
+          "Nazwa": "Czekan Black Diamond",
+          "Typ": "Czekan",
+          "CenaZaDobe": 40,
+          "Rozmiar": "60 cm",
+          "Marka": "Black Diamond",
+          "Dostepny": false,
+          "StanTechniczny": "BardzoDobry",
+          "KategoriaId": 4,
+          "Kategoria": null
+        },
+        {
+          "Id": 9,
+          "Nazwa": "Plecak Deuter 35L",
+          "Typ": "Plecak",
+          "CenaZaDobe": 25,
+          "Rozmiar": "35 L",
+          "Marka": "Deuter",
+          "Dostepny": true,
+          "StanTechniczny": "Dobry",
+          "KategoriaId": 4,
+          "Kategoria": null
+        }
+      ]
+    }
+  ],
+  "Sprzety": [
+    {
+      "Id": 1,
+      "Nazwa": "Narty Atomic Redster",
+      "Typ": "Narty",
+      "CenaZaDobe": 60,
+      "Rozmiar": "170 cm",
+      "Marka": "Atomic",
+      "Dostepny": true,
+      "StanTechniczny": "BardzoDobry",
+      "KategoriaId": 1,
+      "Kategoria": {
+        "Id": 1,
+        "Nazwa": "Narty",
+        "Opis": "Sprz\u0119t narciarski do jazdy po przygotowanych stokach.",
+        "Sprzety": [
+          null,
+          {
+            "Id": 2,
+            "Nazwa": "Narty Fischer RC4",
+            "Typ": "Narty",
+            "CenaZaDobe": 55,
+            "Rozmiar": "165 cm",
+            "Marka": "Fischer",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 1,
+            "Kategoria": null
+          },
+          {
+            "Id": 10,
+            "Nazwa": "Buty narciarskie Salomon",
+            "Typ": "ButyNarciarskie",
+            "CenaZaDobe": 45,
+            "Rozmiar": "42",
+            "Marka": "Salomon",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 1,
+            "Kategoria": null
+          }
+        ]
+      }
+    },
+    {
+      "Id": 2,
+      "Nazwa": "Narty Fischer RC4",
+      "Typ": "Narty",
+      "CenaZaDobe": 55,
+      "Rozmiar": "165 cm",
+      "Marka": "Fischer",
+      "Dostepny": true,
+      "StanTechniczny": "Dobry",
+      "KategoriaId": 1,
+      "Kategoria": {
+        "Id": 1,
+        "Nazwa": "Narty",
+        "Opis": "Sprz\u0119t narciarski do jazdy po przygotowanych stokach.",
+        "Sprzety": [
+          {
+            "Id": 1,
+            "Nazwa": "Narty Atomic Redster",
+            "Typ": "Narty",
+            "CenaZaDobe": 60,
+            "Rozmiar": "170 cm",
+            "Marka": "Atomic",
+            "Dostepny": true,
+            "StanTechniczny": "BardzoDobry",
+            "KategoriaId": 1,
+            "Kategoria": null
+          },
+          null,
+          {
+            "Id": 10,
+            "Nazwa": "Buty narciarskie Salomon",
+            "Typ": "ButyNarciarskie",
+            "CenaZaDobe": 45,
+            "Rozmiar": "42",
+            "Marka": "Salomon",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 1,
+            "Kategoria": null
+          }
+        ]
+      }
+    },
+    {
+      "Id": 3,
+      "Nazwa": "Snowboard Burton Custom",
+      "Typ": "Snowboard",
+      "CenaZaDobe": 70,
+      "Rozmiar": "158 cm",
+      "Marka": "Burton",
+      "Dostepny": false,
+      "StanTechniczny": "BardzoDobry",
+      "KategoriaId": 2,
+      "Kategoria": {
+        "Id": 2,
+        "Nazwa": "Snowboard",
+        "Opis": "Deski snowboardowe i sprz\u0119t do jazdy freestyle.",
+        "Sprzety": [
+          null,
+          {
+            "Id": 4,
+            "Nazwa": "Snowboard Head True",
+            "Typ": "Snowboard",
+            "CenaZaDobe": 50,
+            "Rozmiar": "155 cm",
+            "Marka": "Head",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 2,
+            "Kategoria": null
+          }
+        ]
+      }
+    },
+    {
+      "Id": 4,
+      "Nazwa": "Snowboard Head True",
+      "Typ": "Snowboard",
+      "CenaZaDobe": 50,
+      "Rozmiar": "155 cm",
+      "Marka": "Head",
+      "Dostepny": true,
+      "StanTechniczny": "Dobry",
+      "KategoriaId": 2,
+      "Kategoria": {
+        "Id": 2,
+        "Nazwa": "Snowboard",
+        "Opis": "Deski snowboardowe i sprz\u0119t do jazdy freestyle.",
+        "Sprzety": [
+          {
+            "Id": 3,
+            "Nazwa": "Snowboard Burton Custom",
+            "Typ": "Snowboard",
+            "CenaZaDobe": 70,
+            "Rozmiar": "158 cm",
+            "Marka": "Burton",
+            "Dostepny": false,
+            "StanTechniczny": "BardzoDobry",
+            "KategoriaId": 2,
+            "Kategoria": null
+          },
+          null
+        ]
+      }
+    },
+    {
+      "Id": 5,
+      "Nazwa": "Kask Uvex",
+      "Typ": "Kask",
+      "CenaZaDobe": 20,
+      "Rozmiar": "M",
+      "Marka": "Uvex",
+      "Dostepny": true,
+      "StanTechniczny": "BardzoDobry",
+      "KategoriaId": 3,
+      "Kategoria": {
+        "Id": 3,
+        "Nazwa": "Akcesoria ochronne",
+        "Opis": "Kaski, kijki i podstawowe akcesoria bezpiecze\u0144stwa.",
+        "Sprzety": [
+          null,
+          {
+            "Id": 6,
+            "Nazwa": "Kijki Leki",
+            "Typ": "Kijki",
+            "CenaZaDobe": 15,
+            "Rozmiar": "120 cm",
+            "Marka": "Leki",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 3,
+            "Kategoria": null
+          }
+        ]
+      }
+    },
+    {
+      "Id": 6,
+      "Nazwa": "Kijki Leki",
+      "Typ": "Kijki",
+      "CenaZaDobe": 15,
+      "Rozmiar": "120 cm",
+      "Marka": "Leki",
+      "Dostepny": true,
+      "StanTechniczny": "Dobry",
+      "KategoriaId": 3,
+      "Kategoria": {
+        "Id": 3,
+        "Nazwa": "Akcesoria ochronne",
+        "Opis": "Kaski, kijki i podstawowe akcesoria bezpiecze\u0144stwa.",
+        "Sprzety": [
+          {
+            "Id": 5,
+            "Nazwa": "Kask Uvex",
+            "Typ": "Kask",
+            "CenaZaDobe": 20,
+            "Rozmiar": "M",
+            "Marka": "Uvex",
+            "Dostepny": true,
+            "StanTechniczny": "BardzoDobry",
+            "KategoriaId": 3,
+            "Kategoria": null
+          },
+          null
+        ]
+      }
+    },
+    {
+      "Id": 7,
+      "Nazwa": "Raki Climbing Technology",
+      "Typ": "Raki",
+      "CenaZaDobe": 35,
+      "Rozmiar": "uniwersalny",
+      "Marka": "Climbing Technology",
+      "Dostepny": true,
+      "StanTechniczny": "Dobry",
+      "KategoriaId": 4,
+      "Kategoria": {
+        "Id": 4,
+        "Nazwa": "Turystyka g\u00F3rska",
+        "Opis": "Sprz\u0119t do pieszych wycieczek g\u00F3rskich.",
+        "Sprzety": [
+          null,
+          {
+            "Id": 8,
+            "Nazwa": "Czekan Black Diamond",
+            "Typ": "Czekan",
+            "CenaZaDobe": 40,
+            "Rozmiar": "60 cm",
+            "Marka": "Black Diamond",
+            "Dostepny": false,
+            "StanTechniczny": "BardzoDobry",
+            "KategoriaId": 4,
+            "Kategoria": null
+          },
+          {
+            "Id": 9,
+            "Nazwa": "Plecak Deuter 35L",
+            "Typ": "Plecak",
+            "CenaZaDobe": 25,
+            "Rozmiar": "35 L",
+            "Marka": "Deuter",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 4,
+            "Kategoria": null
+          }
+        ]
+      }
+    },
+    {
+      "Id": 8,
+      "Nazwa": "Czekan Black Diamond",
+      "Typ": "Czekan",
+      "CenaZaDobe": 40,
+      "Rozmiar": "60 cm",
+      "Marka": "Black Diamond",
+      "Dostepny": false,
+      "StanTechniczny": "BardzoDobry",
+      "KategoriaId": 4,
+      "Kategoria": {
+        "Id": 4,
+        "Nazwa": "Turystyka g\u00F3rska",
+        "Opis": "Sprz\u0119t do pieszych wycieczek g\u00F3rskich.",
+        "Sprzety": [
+          {
+            "Id": 7,
+            "Nazwa": "Raki Climbing Technology",
+            "Typ": "Raki",
+            "CenaZaDobe": 35,
+            "Rozmiar": "uniwersalny",
+            "Marka": "Climbing Technology",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 4,
+            "Kategoria": null
+          },
+          null,
+          {
+            "Id": 9,
+            "Nazwa": "Plecak Deuter 35L",
+            "Typ": "Plecak",
+            "CenaZaDobe": 25,
+            "Rozmiar": "35 L",
+            "Marka": "Deuter",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 4,
+            "Kategoria": null
+          }
+        ]
+      }
+    },
+    {
+      "Id": 9,
+      "Nazwa": "Plecak Deuter 35L",
+      "Typ": "Plecak",
+      "CenaZaDobe": 25,
+      "Rozmiar": "35 L",
+      "Marka": "Deuter",
+      "Dostepny": true,
+      "StanTechniczny": "Dobry",
+      "KategoriaId": 4,
+      "Kategoria": {
+        "Id": 4,
+        "Nazwa": "Turystyka g\u00F3rska",
+        "Opis": "Sprz\u0119t do pieszych wycieczek g\u00F3rskich.",
+        "Sprzety": [
+          {
+            "Id": 7,
+            "Nazwa": "Raki Climbing Technology",
+            "Typ": "Raki",
+            "CenaZaDobe": 35,
+            "Rozmiar": "uniwersalny",
+            "Marka": "Climbing Technology",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 4,
+            "Kategoria": null
+          },
+          {
+            "Id": 8,
+            "Nazwa": "Czekan Black Diamond",
+            "Typ": "Czekan",
+            "CenaZaDobe": 40,
+            "Rozmiar": "60 cm",
+            "Marka": "Black Diamond",
+            "Dostepny": false,
+            "StanTechniczny": "BardzoDobry",
+            "KategoriaId": 4,
+            "Kategoria": null
+          },
+          null
+        ]
+      }
+    },
+    {
+      "Id": 10,
+      "Nazwa": "Buty narciarskie Salomon",
+      "Typ": "ButyNarciarskie",
+      "CenaZaDobe": 45,
+      "Rozmiar": "42",
+      "Marka": "Salomon",
+      "Dostepny": true,
+      "StanTechniczny": "Dobry",
+      "KategoriaId": 1,
+      "Kategoria": {
+        "Id": 1,
+        "Nazwa": "Narty",
+        "Opis": "Sprz\u0119t narciarski do jazdy po przygotowanych stokach.",
+        "Sprzety": [
+          {
+            "Id": 1,
+            "Nazwa": "Narty Atomic Redster",
+            "Typ": "Narty",
+            "CenaZaDobe": 60,
+            "Rozmiar": "170 cm",
+            "Marka": "Atomic",
+            "Dostepny": true,
+            "StanTechniczny": "BardzoDobry",
+            "KategoriaId": 1,
+            "Kategoria": null
+          },
+          {
+            "Id": 2,
+            "Nazwa": "Narty Fischer RC4",
+            "Typ": "Narty",
+            "CenaZaDobe": 55,
+            "Rozmiar": "165 cm",
+            "Marka": "Fischer",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 1,
+            "Kategoria": null
+          },
+          null
+        ]
+      }
+    }
+  ],
+  "Wypozyczenia": [
+    {
+      "Id": 1,
+      "IdKlienta": 1001,
+      "DataOd": "2026-06-09T00:00:00+02:00",
+      "PlanowanaDataZwrotu": "2026-06-12T00:00:00+02:00",
+      "RzeczywistaDataZwrotu": "2026-06-12T00:00:00+02:00",
+      "Status": "Zakonczone",
+      "KosztCalkowity": 240,
+      "Pozycje": [
+        {
+          "Id": 1,
+          "SprzetId": 1,
+          "Sprzet": {
+            "Id": 1,
+            "Nazwa": "Narty Atomic Redster",
+            "Typ": "Narty",
+            "CenaZaDobe": 60,
+            "Rozmiar": "170 cm",
+            "Marka": "Atomic",
+            "Dostepny": true,
+            "StanTechniczny": "BardzoDobry",
+            "KategoriaId": 1,
+            "Kategoria": {
+              "Id": 1,
+              "Nazwa": "Narty",
+              "Opis": "Sprz\u0119t narciarski do jazdy po przygotowanych stokach.",
+              "Sprzety": [
+                null,
+                {
+                  "Id": 2,
+                  "Nazwa": "Narty Fischer RC4",
+                  "Typ": "Narty",
+                  "CenaZaDobe": 55,
+                  "Rozmiar": "165 cm",
+                  "Marka": "Fischer",
+                  "Dostepny": true,
+                  "StanTechniczny": "Dobry",
+                  "KategoriaId": 1,
+                  "Kategoria": null
+                },
+                {
+                  "Id": 10,
+                  "Nazwa": "Buty narciarskie Salomon",
+                  "Typ": "ButyNarciarskie",
+                  "CenaZaDobe": 45,
+                  "Rozmiar": "42",
+                  "Marka": "Salomon",
+                  "Dostepny": true,
+                  "StanTechniczny": "Dobry",
+                  "KategoriaId": 1,
+                  "Kategoria": null
+                }
+              ]
+            }
+          },
+          "Ilosc": 1
+        },
+        {
+          "Id": 2,
+          "SprzetId": 5,
+          "Sprzet": {
+            "Id": 5,
+            "Nazwa": "Kask Uvex",
+            "Typ": "Kask",
+            "CenaZaDobe": 20,
+            "Rozmiar": "M",
+            "Marka": "Uvex",
+            "Dostepny": true,
+            "StanTechniczny": "BardzoDobry",
+            "KategoriaId": 3,
+            "Kategoria": {
+              "Id": 3,
+              "Nazwa": "Akcesoria ochronne",
+              "Opis": "Kaski, kijki i podstawowe akcesoria bezpiecze\u0144stwa.",
+              "Sprzety": [
+                null,
+                {
+                  "Id": 6,
+                  "Nazwa": "Kijki Leki",
+                  "Typ": "Kijki",
+                  "CenaZaDobe": 15,
+                  "Rozmiar": "120 cm",
+                  "Marka": "Leki",
+                  "Dostepny": true,
+                  "StanTechniczny": "Dobry",
+                  "KategoriaId": 3,
+                  "Kategoria": null
+                }
+              ]
+            }
+          },
+          "Ilosc": 1
+        }
+      ],
+      "Platnosc": {
+        "Id": 1,
+        "WypozyczenieId": 1,
+        "Kwota": 240,
+        "MetodaPlatnosci": "Karta",
+        "Status": "Zatwierdzona",
+        "DataPlatnosci": "2026-06-09T22:51:34.3916124+02:00"
+      }
+    },
+    {
+      "Id": 2,
+      "IdKlienta": 1002,
+      "DataOd": "2026-06-10T00:00:00+02:00",
+      "PlanowanaDataZwrotu": "2026-06-14T00:00:00+02:00",
+      "RzeczywistaDataZwrotu": "2026-06-15T00:00:00+02:00",
+      "Status": "Zakonczone",
+      "KosztCalkowity": 350,
+      "Pozycje": [
+        {
+          "Id": 3,
+          "SprzetId": 2,
+          "Sprzet": {
+            "Id": 2,
+            "Nazwa": "Narty Fischer RC4",
+            "Typ": "Narty",
+            "CenaZaDobe": 55,
+            "Rozmiar": "165 cm",
+            "Marka": "Fischer",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 1,
+            "Kategoria": {
+              "Id": 1,
+              "Nazwa": "Narty",
+              "Opis": "Sprz\u0119t narciarski do jazdy po przygotowanych stokach.",
+              "Sprzety": [
+                {
+                  "Id": 1,
+                  "Nazwa": "Narty Atomic Redster",
+                  "Typ": "Narty",
+                  "CenaZaDobe": 60,
+                  "Rozmiar": "170 cm",
+                  "Marka": "Atomic",
+                  "Dostepny": true,
+                  "StanTechniczny": "BardzoDobry",
+                  "KategoriaId": 1,
+                  "Kategoria": null
+                },
+                null,
+                {
+                  "Id": 10,
+                  "Nazwa": "Buty narciarskie Salomon",
+                  "Typ": "ButyNarciarskie",
+                  "CenaZaDobe": 45,
+                  "Rozmiar": "42",
+                  "Marka": "Salomon",
+                  "Dostepny": true,
+                  "StanTechniczny": "Dobry",
+                  "KategoriaId": 1,
+                  "Kategoria": null
+                }
+              ]
+            }
+          },
+          "Ilosc": 1
+        },
+        {
+          "Id": 4,
+          "SprzetId": 6,
+          "Sprzet": {
+            "Id": 6,
+            "Nazwa": "Kijki Leki",
+            "Typ": "Kijki",
+            "CenaZaDobe": 15,
+            "Rozmiar": "120 cm",
+            "Marka": "Leki",
+            "Dostepny": true,
+            "StanTechniczny": "Dobry",
+            "KategoriaId": 3,
+            "Kategoria": {
+              "Id": 3,
+              "Nazwa": "Akcesoria ochronne",
+              "Opis": "Kaski, kijki i podstawowe akcesoria bezpiecze\u0144stwa.",
+              "Sprzety": [
+                {
+                  "Id": 5,
+                  "Nazwa": "Kask Uvex",
+                  "Typ": "Kask",
+                  "CenaZaDobe": 20,
+                  "Rozmiar": "M",
+                  "Marka": "Uvex",
+                  "Dostepny": true,
+                  "StanTechniczny": "BardzoDobry",
+                  "KategoriaId": 3,
+                  "Kategoria": null
+                },
+                null
+              ]
+            }
+          },
+          "Ilosc": 1
+        }
+      ],
+      "Platnosc": {
+        "Id": 2,
+        "WypozyczenieId": 2,
+        "Kwota": 350,
+        "MetodaPlatnosci": "Blik",
+        "Status": "Zatwierdzona",
+        "DataPlatnosci": "2026-06-09T22:51:34.3917229+02:00"
+      }
+    },
+    {
+      "Id": 3,
+      "IdKlienta": 1003,
+      "DataOd": "2026-06-09T00:00:00+02:00",
+      "PlanowanaDataZwrotu": "2026-06-11T00:00:00+02:00",
+      "RzeczywistaDataZwrotu": null,
+      "Status": "Aktywne",
+      "KosztCalkowity": 220,
+      "Pozycje": [
+        {
+          "Id": 5,
+          "SprzetId": 3,
+          "Sprzet": {
+            "Id": 3,
+            "Nazwa": "Snowboard Burton Custom",
+            "Typ": "Snowboard",
+            "CenaZaDobe": 70,
+            "Rozmiar": "158 cm",
+            "Marka": "Burton",
+            "Dostepny": false,
+            "StanTechniczny": "BardzoDobry",
+            "KategoriaId": 2,
+            "Kategoria": {
+              "Id": 2,
+              "Nazwa": "Snowboard",
+              "Opis": "Deski snowboardowe i sprz\u0119t do jazdy freestyle.",
+              "Sprzety": [
+                null,
+                {
+                  "Id": 4,
+                  "Nazwa": "Snowboard Head True",
+                  "Typ": "Snowboard",
+                  "CenaZaDobe": 50,
+                  "Rozmiar": "155 cm",
+                  "Marka": "Head",
+                  "Dostepny": true,
+                  "StanTechniczny": "Dobry",
+                  "KategoriaId": 2,
+                  "Kategoria": null
+                }
+              ]
+            }
+          },
+          "Ilosc": 1
+        },
+        {
+          "Id": 6,
+          "SprzetId": 8,
+          "Sprzet": {
+            "Id": 8,
+            "Nazwa": "Czekan Black Diamond",
+            "Typ": "Czekan",
+            "CenaZaDobe": 40,
+            "Rozmiar": "60 cm",
+            "Marka": "Black Diamond",
+            "Dostepny": false,
+            "StanTechniczny": "BardzoDobry",
+            "KategoriaId": 4,
+            "Kategoria": {
+              "Id": 4,
+              "Nazwa": "Turystyka g\u00F3rska",
+              "Opis": "Sprz\u0119t do pieszych wycieczek g\u00F3rskich.",
+              "Sprzety": [
+                {
+                  "Id": 7,
+                  "Nazwa": "Raki Climbing Technology",
+                  "Typ": "Raki",
+                  "CenaZaDobe": 35,
+                  "Rozmiar": "uniwersalny",
+                  "Marka": "Climbing Technology",
+                  "Dostepny": true,
+                  "StanTechniczny": "Dobry",
+                  "KategoriaId": 4,
+                  "Kategoria": null
+                },
+                null,
+                {
+                  "Id": 9,
+                  "Nazwa": "Plecak Deuter 35L",
+                  "Typ": "Plecak",
+                  "CenaZaDobe": 25,
+                  "Rozmiar": "35 L",
+                  "Marka": "Deuter",
+                  "Dostepny": true,
+                  "StanTechniczny": "Dobry",
+                  "KategoriaId": 4,
+                  "Kategoria": null
+                }
+              ]
+            }
+          },
+          "Ilosc": 1
+        }
+      ],
+      "Platnosc": null
+    }
+  ],
+  "Platnosci": [
+    {
+      "Id": 1,
+      "WypozyczenieId": 1,
+      "Kwota": 240,
+      "MetodaPlatnosci": "Karta",
+      "Status": "Zatwierdzona",
+      "DataPlatnosci": "2026-06-09T22:51:34.3916124+02:00"
+    },
+    {
+      "Id": 2,
+      "WypozyczenieId": 2,
+      "Kwota": 350,
+      "MetodaPlatnosci": "Blik",
+      "Status": "Zatwierdzona",
+      "DataPlatnosci": "2026-06-09T22:51:34.3917229+02:00"
+    }
+  ]
+}
