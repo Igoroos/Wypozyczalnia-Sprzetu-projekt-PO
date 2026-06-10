@@ -139,7 +139,12 @@ namespace WypozyczalniaSprzetuGorskiego
             if (dni <= 0) throw new Exception("Liczba dni musi być większa od zera.");
 
            
-            Klient klient = dane.Klienci[0];
+            Klient? klient = InterfejsKonsolowy.WybierzKlienta(dane);
+            if (klient == null)
+            {
+                InterfejsKonsolowy.CzekajNaKlawisz();
+                return;
+            }
             Pracownik pracownik = dane.Pracownicy[0];
 
             int noweIdWypozyczenia = dane.Wypozyczenia.Count > 0 ? dane.Wypozyczenia.Max(w => w.Id) + 1 : 1;

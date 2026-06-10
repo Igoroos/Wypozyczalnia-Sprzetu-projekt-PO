@@ -1,3 +1,6 @@
+using WypozyczalniaSprzetuGorskiego.Data;
+using WypozyczalniaSprzetuGorskiego.Models;
+
 namespace WypozyczalniaSprzetuGorskiego
 {
     public static class InterfejsKonsolowy
@@ -38,6 +41,46 @@ namespace WypozyczalniaSprzetuGorskiego
 
             Console.WriteLine();
             Console.Write("Wybierz opcję: ");
+        }
+        public static Klient? WybierzKlienta(DaneWypozyczalni dane)
+        {
+            PokazNaglowek("WYBÓR KLIENTA");
+
+            if (dane.Klienci.Count == 0)
+            {
+                PokazBlad("Brak klientów w systemie.");
+                return null;
+            }
+
+            Console.WriteLine("Dostępni klienci:");
+            Console.WriteLine();
+
+            foreach (Klient klient in dane.Klienci)
+            {
+                Console.WriteLine($"{klient.Id}. {klient.Imie} {klient.Nazwisko}, tel.: {klient.Telefon}");
+            }
+
+            Console.WriteLine();
+            Console.Write("Podaj ID klienta, który wypożycza sprzęt: ");
+
+            string? tekst = Console.ReadLine();
+
+            if (!int.TryParse(tekst, out int idKlienta))
+            {
+                PokazBlad("Podano nieprawidłowe ID klienta.");
+                return null;
+            }
+
+            Klient? wybranyKlient = dane.Klienci.FirstOrDefault(k => k.Id == idKlienta);
+
+            if (wybranyKlient == null)
+            {
+                PokazBlad("Nie znaleziono klienta o podanym ID.");
+                return null;
+            }
+
+            PokazSukces($"Wybrano klienta: {wybranyKlient.Imie} {wybranyKlient.Nazwisko}");
+            return wybranyKlient;
         }
         public static void PokazSukces(string komunikat)
         {
