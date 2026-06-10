@@ -1,0 +1,5 @@
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\bin\Release\net10.0\publish\Wypozyczalnia_sprzetow.exe
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\bin\Release\net10.0\publish\Wypozyczalnia_sprzetow.dll
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\bin\Release\net10.0\publish\Wypozyczalnia_sprzetow.deps.json
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\bin\Release\net10.0\publish\Wypozyczalnia_sprzetow.runtimeconfig.json
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\bin\Release\net10.0\publish\Wypozyczalnia_sprzetow.pdb

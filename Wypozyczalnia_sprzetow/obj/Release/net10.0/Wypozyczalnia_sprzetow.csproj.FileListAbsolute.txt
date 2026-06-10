@@ -1,0 +1,15 @@
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\bin\Release\net10.0\Wypozyczalnia_sprzetow.exe
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\bin\Release\net10.0\Wypozyczalnia_sprzetow.deps.json
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\bin\Release\net10.0\Wypozyczalnia_sprzetow.runtimeconfig.json
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\bin\Release\net10.0\Wypozyczalnia_sprzetow.dll
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\bin\Release\net10.0\Wypozyczalnia_sprzetow.pdb
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\obj\Release\net10.0\Wypozyczalnia_sprzetow.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\obj\Release\net10.0\Wypozyczalnia_sprzetow.AssemblyInfoInputs.cache
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\obj\Release\net10.0\Wypozyczalnia_sprzetow.AssemblyInfo.cs
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\obj\Release\net10.0\Wypozyczalnia_sprzetow.csproj.CoreCompileInputs.cache
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\obj\Release\net10.0\Wypozyczalnia_sprzetow.sourcelink.json
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\obj\Release\net10.0\Wypozyczalnia_sprzetow.dll
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\obj\Release\net10.0\refint\Wypozyczalnia_sprzetow.dll
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\obj\Release\net10.0\Wypozyczalnia_sprzetow.pdb
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\obj\Release\net10.0\Wypozyczalnia_sprzetow.genruntimeconfig.cache
+C:\Users\Igor Rostkowski\Desktop\projekty\PO\Wypozyczalnia-Sprzetu-projekt-PO\wypozyczalnia_sprzetow\obj\Release\net10.0\ref\Wypozyczalnia_sprzetow.dll
