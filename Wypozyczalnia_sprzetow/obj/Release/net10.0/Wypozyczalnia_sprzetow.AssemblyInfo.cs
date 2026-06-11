@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Wypozyczalnia_sprzetow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cbbd3ca85f674527c83fdd396eae75bec66e2af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48b6fcada90906534172b936e820dbaaba3cd198")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wypozyczalnia_sprzetow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wypozyczalnia_sprzetow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
